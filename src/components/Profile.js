@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../files/MausamJain_CV.pdf'
+import resume from '../docs/MausamJain_CV.pdf'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Card from 'react-bootstrap/Card'
 

@@ -1,8 +1,8 @@
 import React from 'react'
-import lin from '../files/linkedin.png'
-import twi from '../files/twitter.png'
-import git from '../files/github.png'
-import med from '../files/medium.png'
+import lin from '../media/linkedin.png'
+import twi from '../media/twitter.png'
+import git from '../media/github.png'
+import med from '../media/medium.png'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Image from 'react-bootstrap/Image'
 

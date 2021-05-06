@@ -3,7 +3,7 @@ import './App.css';
 import Home from './components/Home.js'
 import Profile from './components/Profile.js'
 import Reading from './components/Reading.js'
-import me from './files/mj.jpg'
+import me from './media/mj.jpg'
 
 import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
