@@ -19,7 +19,8 @@ const imgStyle = {
 }
 const contentStyle = {
     margin:'1rem', 
-    border:'None'
+    border:'None',
+    background: '#fafafa'
 }
 
 const current = []

@@ -9,12 +9,12 @@ import Image from 'react-bootstrap/Image'
 const jumboStyle = {
     backgroundColor: 'transparent',
     marginBottom: '0',
-    fontFamily: 'Seravek'
+    // fontFamily: 'Seravek'
 }
 
 const socialStyle = {
-    width:'1.5rem', 
-    height:'1.5rem',
+    width:'1.8rem', 
+    height:'1.9rem',
     marginRight:'3rem',
     opacity:'0.75'
 }
@@ -23,14 +23,13 @@ class Home extends React.Component {
     render() {
         return(
             <Jumbotron style={jumboStyle}>
-                Hi there 🖐🏽 I am Mausam, Research Scientist at Rakuten Institute of Technology, Rakuten Inc. 
+                I am a Research Scientist at Rakuten Institute of Technology, Rakuten Inc. 🙂 
                 My current work is on speech processing problems like emotion 
                 recognition, speech source separation and speech-to-text. Previously, 
                 I have worked on forecasting of stocks and bonds for financial trading.
-                <br/><br/>
                 I try to keep up with the overwhelming progress in the machine 
-                learning 😨 or if can't, read (auto)biographies and science or play computer games 🙃.
-                <p style={{marginTop:'3rem'}}>
+                learning 😨 OW irregularly read (auto)biographies and science or regularly play computer games 🙃.
+                <p style={{marginTop:'3rem'}} className='text-center'>
                     <a href='https://www.linkedin.com/in/mausamsion/'><Image src={lin} style={socialStyle} /></a>
                     <a href='https://github.com/mausamsion'><Image src={git} style={socialStyle} /></a>
                     <a href='https://medium.com/@mausamsion'><Image src={med} style={socialStyle} /></a>
