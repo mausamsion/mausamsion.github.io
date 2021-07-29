@@ -3,8 +3,9 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'PT Sans', sans-serif;
+    /* font-family: 'Source Serif Pro'; */
     font-size: 1.25rem;
-    background: #fafafa;
+    background: #fafafa94;
 }
 
 /* .global {

@@ -4,11 +4,11 @@
 // regular JavaScript file and exporting the entire object globally, you can use it inside any component and save a considerable amount of development time when working with external APIs. 
 
 /* eslint-disable no-multi-str */
-import elomus from "../../media/elonmusk.jpg"
-import davgog from "../../media/davidgoggins.jpg"
-import whysle from "../../media/whywesleep.webp"
-import trenoa from "../../media/trevornoah.jpg"
-import atohab from "../../media/atomichabits.jpg"
+import elomus from "../media/elonmusk.jpg"
+import davgog from "../media/davidgoggins.jpg"
+import whysle from "../media/whywesleep.webp"
+import trenoa from "../media/trevornoah.jpg"
+import atohab from "../media/atomichabits.jpg"
 
 const readingData = {
     current: [

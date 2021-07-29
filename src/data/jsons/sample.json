@@ -1,0 +1,304 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Made using ReactJS\n",
+    "\n",
+    "### Acknowledgement:\n",
+    "- [Host your React application using GitHub Pages](https://fullyunderstood.com/host-your-react-application-using-github-pages/)\n",
+    "\n",
+    "\n",
+    "\n",
+    "# 1. Welcome to StackEdit!\n",
+    "\n",
+    "Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.\n",
+    "\n",
+    "\n",
+    "# 2. Files\n",
+    "\n",
+    "StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**\n",
+    "\n",
+    "## 2.1 Create files and folders\n",
+    "\n",
+    "The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.\n",
+    "\n",
+    "## 2.2 Switch to another file\n",
+    "\n",
+    "All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.\n",
+    "\n",
+    "## 2.3 Rename a file\n",
+    "\n",
+    "You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.\n",
+    "\n",
+    "## 2.4 Delete a file\n",
+    "\n",
+    "You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.\n",
+    "\n",
+    "## 2.5 Export a file\n",
+    "\n",
+    "You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.\n",
+    "\n",
+    "\n",
+    "# 3. Synchronization\n",
+    "\n",
+    "Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.\n",
+    "\n",
+    "There are two types of synchronization and they can complement each other:\n",
+    "\n",
+    "- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.\n",
+    "    > To start syncing your workspace, just sign in with Google in the menu.\n",
+    "\n",
+    "- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.\n",
+    "\t> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.\n",
+    "\n",
+    "## 3.1 Open a file\n",
+    "\n",
+    "You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.\n",
+    "\n",
+    "## 3.2 Save a file\n",
+    "\n",
+    "You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.\n",
+    "\n",
+    "## 3.3 Synchronize a file\n",
+    "\n",
+    "Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.\n",
+    "\n",
+    "If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.\n",
+    "\n",
+    "> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.\n",
+    "\n",
+    "## 3.4 Manage file synchronization\n",
+    "\n",
+    "Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.\n",
+    "\n",
+    "\n",
+    "# 4. Publication\n",
+    "\n",
+    "Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.\n",
+    "\n",
+    "> Before starting to publish, you must link an account in the **Publish** sub-menu.\n",
+    "\n",
+    "## 4.1 Publish a File\n",
+    "\n",
+    "You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:\n",
+    "\n",
+    "- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),\n",
+    "- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).\n",
+    "\n",
+    "## 4.2 Update a publication\n",
+    "\n",
+    "After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.\n",
+    "\n",
+    "> **Note:** The **Publish now** button is disabled if your file has not been published yet.\n",
+    "\n",
+    "## 4.3 Manage file publication\n",
+    "\n",
+    "Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.\n",
+    "\n",
+    "\n",
+    "# 5. Markdown extensions\n",
+    "\n",
+    "StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.\n",
+    "\n",
+    "> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.\n",
+    "\n",
+    "\n",
+    "## 5.1 SmartyPants\n",
+    "\n",
+    "SmartyPants converts ASCII punctuation characters into \"smart\" typographic punctuation HTML entities. For example:\n",
+    "\n",
+    "|                |ASCII                          |HTML                         |\n",
+    "|----------------|-------------------------------|-----------------------------|\n",
+    "|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |\n",
+    "|Quotes          |`\"Isn't this fun?\"`            |\"Isn't this fun?\"            |\n",
+    "|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|    "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## KaTeX"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):\n",
+    "\n",
+    "The *Gamma function* satisfying $\\Gamma(n) = (n-1)!\\quad\\forall n\\in\\mathbb N$ is via the Euler integral\n",
+    "\n",
+    "$$\n",
+    "\\Gamma(z) = \\int_0^\\infty t^{z-1}e^{-t}dt\\,.\n",
+    "$$\n",
+    "\n",
+    "> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).\n",
+    "\n",
+    "\n",
+    "$$\\sigma_U \\sim \\mathrm{Normal}(0, \\Theta_U^2)$$"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "_______________________________________________________________________________________________________________"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "usage: ipykernel_launcher.py [-h] --jvs_dir JVS_DIR --jvs_md_dir JVS_MD_DIR\n",
+      "                             --md_dir MD_DIR --n_src N_SRC\n",
+      "ipykernel_launcher.py: error: the following arguments are required: --jvs_dir, --jvs_md_dir, --md_dir, --n_src\n"
+     ]
+    },
+    {
+     "ename": "SystemExit",
+     "evalue": "2",
+     "output_type": "error",
+     "traceback": [
+      "An exception has occurred, use %tb to see the full traceback.\n",
+      "\u001b[0;31mSystemExit\u001b[0m\u001b[0;31m:\u001b[0m 2\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/Users/mausam.jain/anaconda3/lib/python3.8/site-packages/IPython/core/interactiveshell.py:3426: UserWarning: To exit: use 'exit', 'quit', or Ctrl-D.\n",
+      "  warn(\"To exit: use 'exit', 'quit', or Ctrl-D.\", stacklevel=1)\n"
+     ]
+    }
+   ],
+   "source": [
+    "import os\n",
+    "import argparse\n",
+    "import random\n",
+    "import warnings\n",
+    "\n",
+    "# Global parameters\n",
+    "EPS = 1e-10         # secures log and division\n",
+    "MAX_AMP = 0.9       # max amplitude in sources and mixtures\n",
+    "RATE = 24000        # JVS has all the sources at 24KHz\n",
+    "\n",
+    "if __name__=='__main__':\n",
+    "    parser = argparse.ArgumentParser()\n",
+    "    parser.add_argument('--jvs_dir', type=str, required=True,\n",
+    "                        help='Absolute path of the JVS dataset directory')\n",
+    "    parser.add_argument('--jvs_md_dir', type=str, required=True,\n",
+    "                        help='Absolute path of the JVS dataset metadata directory')\n",
+    "    parser.add_argument('--md_dir', type=str, required=True,\n",
+    "                        help='Absolute path to metadata directory')\n",
+    "    parser.add_argument('--n_src', type=int, required=True, \n",
+    "                        help='Number of sources to create the mixture for')\n",
+    "    args = parser.parse_args()\n",
+    "    main(args)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "_______________________________________________________________________________________________________________"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Use `brew install tree` command to install it.\n",
+    "\n",
+    "And run `python compile.py --argu 10` to get results back."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "_______________________________________________________________________________________________________________"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-2-8135bb6b1150>, line 1)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-2-8135bb6b1150>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    while getopts \":idnQ\" opt; do\u001b[0m\n\u001b[0m                  ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "while getopts \":idnQ\" opt; do\n",
+    "    case $opt in\n",
+    "        i) _OPTS+=\" -i \" ;;\n",
+    "        d)  _OPTS+=\" -Q \" ;;\n",
+    "        n) n_flag=true ;;\n",
+    "        Q)  _OPTS+=\" -Q \" ;;\n",
+    "        \\?) _usage\n",
+    "            return ;;\n",
+    "    esac\n",
+    "done"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "_______________________________________________________________________________________________________________"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The answer for 5+6 is = 11\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('The answer for 5+6 is =', 5+6)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
