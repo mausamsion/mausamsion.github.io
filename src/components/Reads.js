@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom';
 import {Card} from 'react-bootstrap';
-import Header from './Header.js'
 import readsData from '../data/readsData.js'
 import MainContent from './MainContent.js'
 
@@ -22,15 +21,15 @@ const namelink = "/mjlogs";
 function Reads(props) {
     useEffect(() => {
         ReactDOM.render(
-            <MainContent 
-                activenav='mjlogs' 
-                dname={blogheader} 
+            <MainContent
+                activenav='mjlogs'
+                dname={blogheader}
                 namelink={namelink}
-            />, 
+            />,
             document.getElementById('global')
         )
     }, [])
-    
+
     return (
         <div>
         <Card style={{backgroundColor: 'transparent', border: 'None'}}>
