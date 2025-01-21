@@ -11,3 +11,11 @@
 /* .global {
     background: #aaaaaa;
 } */
+
+a {
+    text-decoration: None !important;
+}
+
+a:hover {
+    text-decoration: None !important;
+}

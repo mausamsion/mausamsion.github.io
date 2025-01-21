@@ -1,52 +1,60 @@
 import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom';
+import {Jumbotron, Image, Col, Row, Card} from 'react-bootstrap'
 
-import lin from '../media/linkedin.png'
-import twi from '../media/twitter.png'
-import git from '../media/github.png'
-import med from '../media/medium.png'
-import Jumbotron from 'react-bootstrap/Jumbotron'
-import Image from 'react-bootstrap/Image'
+import MainContent from './MainContent.js'
+import me from '../media/mj.jpg'
 
-import Header from './Header.js'
+import Publications from './Publications.js';
+import Patents from './Patents.js';
 
 const jumboStyle = {
     backgroundColor: 'transparent',
     marginBottom: '0',
+    marginTop: '-2em',
+    marginRight: '-2em'
     // fontFamily: 'Seravek'
 }
 
-const socialStyle = {
-    width:'1.8rem', 
-    height:'1.9rem',
-    marginRight:'3rem',
-    opacity:'0.75'
+const dpStyle = {
+    width:'13rem', 
+    height:'13rem',
 }
 
 function About() {
     useEffect(() => {
         ReactDOM.render(
-            <Header activenav='about' />, 
+            <MainContent activenav='about' />, 
             document.getElementById('global')
         )
-    })
+    }, [])
 
     return (
-        <Jumbotron style={jumboStyle}>
-            I am a Research Scientist at Rakuten Institute of Technology, Rakuten Inc. 🙂 
-            My current work is on finding business solutions for Speech Processing problems like emotion 
-            recognition, speech source separation and speech-to-text. Previously, 
-            I have worked on forecasting of stocks and bonds for financial trading.
-            <br/><br/>
-            I try to keep up with the overwhelming progress in the machine 
-            learning 😨 OW irregularly read (auto)biographies and science or regularly play computer games 🙃.
-            <p style={{marginTop:'3rem'}} className='text-center'>
-                <a href='https://www.linkedin.com/in/mausamsion/'><Image src={lin} style={socialStyle} /></a>
-                <a href='https://github.com/mausamsion'><Image src={git} style={socialStyle} /></a>
-                <a href='https://medium.com/@mausamsion'><Image src={med} style={socialStyle} /></a>
-                <a href='https://twitter.com/mausamsion'><Image src={twi} style={socialStyle} /></a>
-            </p>
-        </Jumbotron>
+        <div>
+            <Row className="align-items-center">
+                <Col sm={9} className='text-left'>
+                    <Jumbotron style={jumboStyle}>
+                        I am a Senior Research Scientist at <a href="https://rit.rakuten.com/"> Rakuten Institute of Technology</a>, Rakuten Inc.
+                        where my current area of research is in Recommender Systems and Model Explainability for Deep Learning Models. 
+                        My previous work on Natural Language Processing involves understanding of dual-encoder retrieval models and their ranking interpretation.
+                        I am interested in exploring reasoning ability and embeddings learnt by Large Langugage Models and their interpretability. 
+                        Otherwise, I love table tennis and video games! <br/>
+                        I completed my Master's in Computer Science from <a href="https://cse.iith.ac.in/"> Indian Institute of Technology Hyderabad </a> 
+                        in 2017, where I was advised by Dr. Vineeth N Balasubramanian, for on my thesis on 
+                        Learning Graph invariant Hierarchical Representations for sub-graph matching and classification.
+                    </Jumbotron>
+                </Col>
+                <Col sm={3} className='text-left'>
+                    <Jumbotron style={jumboStyle}>
+                        <Image src={me} roundedCircle style={dpStyle} />
+                    </Jumbotron>
+                </Col>
+            </Row>
+            
+            <Publications />
+            
+            <Patents />
+        </div>
     )
 }
 
