@@ -10,7 +10,8 @@ function populate(R) {
         reads.push (
             <li>
                 <a href={r.url}>{r.title}</a> | {r.owner} | {r.year}
-            </li>)
+            </li>
+        )
     }
 }
 populate(readsData)
