@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, NavLink, Link} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 import '../App.css';
 import {Jumbotron, Row, Col, Nav, Image, ListGroup} from  'react-bootstrap'
 import { AiFillHome } from "react-icons/ai";
@@ -54,9 +54,9 @@ function MainContent(props) {
                     <Col sm={7} className="text-center align-items-center">
                         <ListGroup horizontal className="align-items-center">
                             <ListGroup.Item style={lgStyle}>
-                                <a style={myName} href={!props.namelink ? defaultnamelink : props.namelink}>
+                                <Link style={myName} to={!props.namelink ? defaultnamelink : props.namelink}>
                                     {!props.dname ? defaultname : props.dname}
-                                </a>
+                                </Link>
                             </ListGroup.Item>
                             <ListGroup.Item style={lgStyle}>
                                 
